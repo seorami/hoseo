@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/dc0e088b5a.js" crossorigin="anonymous"></script>
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 제이쿼리 -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 사용자 자바스크립트 -->
+    <script src="./js/main.js"></script>
+    <!-- bx slider JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <!-- bx slider css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+</head>
+<body>
+    <header id="main_header">
+            <h1>
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="동물병원">
+                </a>
+            </h1>
+            
+            <nav id="main_gnb">
+                <div class="container">
+                    <ul class="depth1">
+                        <li><a href="./page1-1.html">병원소개</a>
+                            <ul class="depth2">
+                                <li><a href="./page1-1.html">인사말</a></li>
+                                <li><a href="./page3-1.html">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">의료진소개</a>
+                            <ul class="depth2">
+                                <li><a href="#">원장</a></li>
+                                <li><a href="#">수의사</a></li>
+                                <li><a href="#">테크니션</a></li>
+                                <li><a href="#">매니저</a></li>
+                                <li><a href="#">미용사</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">병원시설</a>
+                            <ul class="depth2">
+                                <li><a href="#">진료실</a></li>
+                                <li><a href="#">수술실</a></li>
+                                <li><a href="#">X-RAY 촬영실</a></li>
+                                <li><a href="#">약제조실</a></li>
+                                <li><a href="#">미용실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./page2-1.html">진료안내</a>
+                            <ul class="depth2">
+                                <li><a href="#">진료시간</a></li>
+                                <li><a href="#">진료과목</a></li>
+                            </ul>            
+                        </li>
+                        <li><a href="#">커뮤니티</a>
+                            <ul class="depth2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">봉사활동</a></li>
+                                <li><a href="#">F&A</a></li>
+                            </ul> 
+                        </li>
+                    </ul> <!-- END depth1 -->
+                </div>
+            </nav>
+      </header>
+
+
+    <section id="main_banner">
+        <div class="inner">
+            <div class="slider">
+                <img class="show" src="./images/main_banner1.jpg" alt="banner1">
+                <img  src="./images/main_banner2.jpg" alt="banner2">
+                <img  src="./images/main_banner3.jpg" alt="banner3">
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+      
+          var slider = $('.slider').bxSlider({
+            responsive: false,
+            auto : true,
+          });     
+
+
+        });
+    </script>
+
+
+    <section id="contents">
+        <div class="box">
+            <ul>
+                <li>
+                    <a href="./page1-1.html">
+                        <img src="./images/photo1.jpg" alt="1">
+                        <div class="imghover"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page2-1.html">
+                        <img src="./images/photo2.jpg" alt="2">
+                        <div class="imghover"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page2-1.html">
+                        <img src="./images/photo3.jpg" alt="3">
+                        <div class="imghover"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./page3-1.html">
+                        <img src="./images/photo4.jpg" alt="4">
+                        <div class="imghover"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</section>
+
+    <section id="icons">
+        <div class="container">
+            <div class="icon1">
+                <ul>
+                    <li><a href="#"><img src="./images/icon1.png" alt="1"></a></li>
+                    <li><a href="#"><img src="./images/icon2.png" alt="2"></a></li>
+                    <li><a href="#"><img src="./images/icon3.png" alt="3"></a></li>
+                    <li><a href="#"><img src="./images/icon4.png" alt="4"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="photo">
+        <!-- <img src="./images/bottom_banner.jpg" alt="1"> -->
+        <div class="button">
+            <a href="#">의료진 소개</a>
+            <a href="#">장비소개</a>
+        </div>
+    </section>
+
+    <footer id="main_footer">
+        <h1><a href="index.html"><img src="./images/logo_footer.png" alt="호서동물병원"></a></h1>
+        <address>157-731 서울특별시 강서구 등촌3동 680-1 호서동물병원</address>
+        <p>HOSEO PET CLINIC CENTER, 680-1 Deungchon-dong Kang Seo Gu, Seoul, Korea</p>
+        <br>
+        <p class="copyright">Copyright &copy; 2008 HOSEO PET CLINIC CENTER, All right Reserved.</p>
+    </footer>
+</body>
+</html>
