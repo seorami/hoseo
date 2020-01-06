@@ -14,6 +14,8 @@
   body {
     color: #363636;
     font-family: 'Noto Sans KR', sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
   }
   .container {
     width: 1200px;
@@ -55,7 +57,6 @@
     color: #363636;
   }
   
-  /* 호버시 메뉴 언더라인 효과 */
   #main_gnb .depth1 > li > a:hover {
     color: #00a7af;
   }
@@ -67,7 +68,7 @@
     top: 11px;
     width: 100%;
     max-height: 0;
-    opacity: 0;
+    display: none;
     transition-duration: 0.2s;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -75,9 +76,9 @@
   /* 1단계 메뉴:hover > 2단계 표시 */
   .depth1 > li:hover > .depth2 {
       background: rgba(0,0,0,0.6);
-    /* display: block; */
+    display: block;
     max-height: 500px;
-    opacity: 1;
+    /* opacity: 1; */
   }
   .depth1 li {
       padding-bottom: 10px;
@@ -85,7 +86,7 @@
   .depth2 a {
       color: white;
   }
-  /* 2단계 메뉴 목록 hover시 반전효과 */
+
   header .depth2 > li:hover > a {
     font-weight: bold;
   }
@@ -117,7 +118,7 @@
 /* 배너 */
 #main_banner {
     position: relative;
-    width: 2560px;
+    width: 100%;
     /* width: 100%; */
     /* height: 100%; */
     height: 900px;
@@ -128,7 +129,7 @@
 
 #main_banner .inner {
     width: 2560px;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     position: absolute;
     left: 50%;
@@ -140,7 +141,10 @@
 .bx-pager { 
     bottom: 20px !important;
   }
-
+/* 특화센터 */
+#mid_banner {
+  margin-top: 50px;
+}
 
 
 /* 메인콘텐트 */
@@ -188,8 +192,8 @@
     /* height: 150px; */
     /* background: #666; */
     position: relative;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     /* margin: 0 auto; */
     /* top: 100px; */
     /* outline: 1px solid red; */
