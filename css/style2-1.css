@@ -67,7 +67,8 @@ body {
   top: 11px;
   width: 100%;
   max-height: 0;
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
   transition-duration: 0.2s;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -75,9 +76,9 @@ body {
 /* 1단계 메뉴:hover > 2단계 표시 */
 .depth1 > li:hover > .depth2 {
     background: rgba(0,0,0,0.6);
-  /* display: block; */
+  display: block;
   max-height: 500px;
-  opacity: 1;
+  /* opacity: 1; */
 }
 .depth1 li {
     padding-bottom: 10px;
