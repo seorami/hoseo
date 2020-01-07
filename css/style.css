@@ -1,4 +1,5 @@
 /* style.css */
+html { scroll-behavior: smooth;}
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -121,7 +122,7 @@
     width: 100%;
     /* width: 100%; */
     /* height: 100%; */
-    height: 900px;
+    height: 750px;
     margin: 0 auto;
     overflow: hidden;
     /* outline: 1px solid red; */
@@ -253,7 +254,7 @@
     height: 220px;
     text-align: center;
     background: #666;
-    color: #fff;
+    color: #ccc;
     /* outline: 1px solid red; */
     /* top: 180px; */
     margin-top: 50px;

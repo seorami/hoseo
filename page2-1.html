@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>진료안내 | 호서동물병원</title>
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/style2-1.css">
   <!-- 제이쿼리 -->
@@ -13,6 +15,8 @@
   <script src="./js/main.js"></script>
   <!-- 이미지로디드 -->
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <!-- 메인.js -->
+  <script src="./js/main.js"></script>
 </head>
 <body>
   
@@ -97,8 +101,25 @@
         <img id="list6" src="./images/피부과.png" alt="6">
         <img id="list7" src="./images/영상의학과.png" alt="7">
       </div>
+      <div id="top"><a href="#main_header"><img src="./images/top.png" alt=""></a></div>
     </div>
   </section>
+
+  <script>
+    $(function(){
+	// 페이지 스크롤 효과
+	$('#btn a, #top a').on('click', function(){
+		// 이동한 내부 링크의 위치값(hash)
+		var target = $(this.hash);
+		console.log(target);
+		$('html, body').animate({
+			scrollTop: target.offset().top
+		});
+		return false; // 앵커태그 무효화
+	});
+
+});
+  </script>
 
   <footer id="main_footer">
     <h1><a href="index.html"><img src="./images/logo_footer.png" alt="호서동물병원"></a></h1>
