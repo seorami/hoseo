@@ -1,7 +1,7 @@
 // main.js
 
 // 
-$('.container').imagesLoaded( function() {
+$('.inner').imagesLoaded( function() {
 
   images have loaded
 
